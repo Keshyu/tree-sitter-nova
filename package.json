@@ -3,8 +3,13 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "start": "npx tree-sitter generate && npx tree-sitter parse test.nova",
-    "test": "npx tree-sitter test"
+    "start": "tree-sitter generate && tree-sitter parse test.nova",
+    "build": "tree-sitter generate && node-gyp build",
+    "test": "tree-sitter test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Keshyu/tree-sitter-nova.git"
   },
   "dependencies": {
     "nan": "^2.14.2"
