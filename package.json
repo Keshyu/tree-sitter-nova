@@ -1,0 +1,15 @@
+{
+  "name": "tree-sitter-nova",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tree-sitter generate && npx tree-sitter parse test.nova",
+    "test": "npx tree-sitter test"
+  },
+  "dependencies": {
+    "nan": "^2.14.2"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.17.3"
+  }
+}

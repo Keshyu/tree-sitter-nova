@@ -1,0 +1,17 @@
+Combinable : Type -> Record
+
+Combinable thing = {
+  combine : thing -> thing -> thing
+}
+
+
+combinable-integer : Combinable Integer
+
+combinable-integer = {
+  combine = (+)
+}
+
+combine3 combinable-a a1 a2 a3
+  = a1
+  |> combinable-a.combine a2
+  |> combinable-a.combine a3
